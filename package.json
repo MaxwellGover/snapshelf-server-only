@@ -1,0 +1,16 @@
+{
+  "name": "snapshelf-server",
+  "version": "1.0.0",
+  "description": "Get image from Pixelz and save it to Firebase Storage",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+  "dependencies": {
+    "@google-cloud/storage": "^1.1.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}

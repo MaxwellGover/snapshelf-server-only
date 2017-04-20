@@ -1,0 +1,8 @@
+{
+  "name": "snapshelf-server",
+  "description": "Get image from Pixelz and save it to Firebase Storage",
+  "repository": "https://github.com/MaxwellGover/snapshelf-web/blob/master/server",
+  "logo": "https://firebase.google.com/_static/images/firebase/touchicon-180.png",
+  "success_url": "/",
+  "keywords": ["pixelz", "firebase", "cloud-storage", "google"]
+}
