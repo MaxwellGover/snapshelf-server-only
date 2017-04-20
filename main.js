@@ -40,10 +40,15 @@ server.get('/', (req, res) => {
 // Handle HTTP POST requests.
 // Your webhook entry point.
 server.post('/', (req, res) => {
-  res.status(200).end();
+  if (req.body && req.body.processedImageURL) {
 
-  // Get image from Pixelz and save it to Firebase Storage.
-  saveImage(req.body.processedImageURL);
+    // Get image from Pixelz and save it to Firebase Storage.
+    saveImage(req.body.processedImageURL);
+
+    return res.status(200).end();
+  }
+
+  res.status(400).end();
 });
 
 // Initialize the server.
