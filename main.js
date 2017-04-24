@@ -40,6 +40,11 @@ server.get('/', (req, res) => {
 // Handle HTTP POST requests.
 // Your webhook entry point.
 server.post('/', (req, res) => {
+
+  // Debug
+  console.log(':::: D E B U G ::::');
+  console.log(req.body);
+
   if (req.body && req.body.processedImageURL) {
 
     // Get image from Pixelz and save it to Firebase Storage.
