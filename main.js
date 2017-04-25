@@ -10,14 +10,14 @@ const server = express();
 // Firebase ID.
 // Firebase Project ID and Service Account Key.
 const gcs = storage({
-  projectId: 'snapshelf-aa1b5', // <--- USE YOURS!
+  projectId: 'snapshelf-aabb55', // <--- USE YOURS!
   keyFilename: './serviceAccountKey.json'
 });
 
 // Firebase bucket.
 // It's the Firebase Project ID + .appspot.com
 // USE YOURS!
-const bucket = gcs.bucket('snapshelf-aa1b5.appspot.com');
+const bucket = gcs.bucket('snapshelf-aabb55.appspot.com');
 
 // Configure the port your server in going to use.
 // By default it's 3000 if the environment (e.g. Heroku) don't set it.
